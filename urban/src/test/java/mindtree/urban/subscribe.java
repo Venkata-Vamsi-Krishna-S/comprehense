@@ -11,7 +11,7 @@ public class subscribe {
 		System.setProperty("webdriver.chrome.driver", "‪C:\\chromedriver.exe");
 		WebDriver drv=new ChromeDriver();
 		drv.get("https://www.urbanladder.com/");
-       
+                driver.close();
 		drv.findElement(By.id("//*'[@id=\"email_id\']")).sendKeys("gmail@gmail.com");
 		drv.findElement(By.id("*//[@id='nl-subscribe-footer']")).click();
 	}
