@@ -19,7 +19,7 @@ public class password {
        drv.findElement(By.xpath("//a[class='forget-password link-color']")).click();
        WebElement we=drv.findElement(By.cssSelector(" #spree_user_email"));
        we.click();
-       we.sendKeys("gmail@gmail.com");
+       we.sendKeys("gmail@gmail.com").enter;
        drv.findElement(By.id(" //*[@id=\'forgot_password_form\']")).click();
 	}
 
